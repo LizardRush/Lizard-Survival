@@ -176,6 +176,8 @@ MonoBehaviour:
   chunks:
   - {fileID: 7256661636827274716, guid: 90caab5f39e9c4765a0bff6402e0153e, type: 3}
   - {fileID: 6267088462716244701, guid: 6ca6f50d5a5e24c29945b3b8b02352ad, type: 3}
+  height: 0
+  width: 0
 --- !u!4 &417640274
 Transform:
   m_ObjectHideFlags: 0
@@ -252,7 +254,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
