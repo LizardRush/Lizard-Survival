@@ -13,6 +13,8 @@ public class ChunkScript :NetworkBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        mapGenerate.CreateNeighbors(transform.position);
+        if (mapGenerate == null) { return; }
+        if (collision.gameObject.tag == "Player")
+        { mapGenerate.CreateNeighbors(transform.position); }
     }
 }

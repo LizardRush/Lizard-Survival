@@ -13,7 +13,7 @@ public class MapGenerate : NetworkBehaviour
     {
         GameObject chunk = chunks[Random.Range(0,chunks.Length)];
         Instantiate(chunk, spawnPos, Quaternion.identity);
-        chunk.GetComponent<NetworkObject>().Spawn();
+       // chunk.GetComponent<NetworkObject>().Spawn();
         chunk.GetComponent<ChunkScript>().mapGenerate = this;
     }
     public override void OnNetworkSpawn()
